@@ -1,11 +1,11 @@
-const box = document.querySelector('box');
-const btns = document.querySelectorAll('button');
-let count = 0;
+const btnCall = document.querySelector(".btnCall");
+const btnClose = document.querySelector('.btnClose');
+const mobileMenu = document.querySelector('.mobileMenu');
 
-btns[0].addEventListener('click', () => {
-  box.style.transform = `rotate(${30 * --count}deg)`
+btnCall.addEventListener('click', () => {
+  mobileMenu.classList.add('on');
 });
 
-btns[1].addEventListener('click', () => {
-  box.style.transform = `rotate(${30 * ++count}deg)`
+btnClose.addEventListener('click', () => {
+  mobileMenu.classList.remove('on');
 });
